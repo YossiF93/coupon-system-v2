@@ -1,0 +1,82 @@
+openapi: 3.0.1
+info:
+  title: YossiF93 - Coupons System (Server Side)
+  description: CRUD APIs for mangaging the Coupon System .
+  version: 1.0.0
+externalDocs:
+  description: Software Design Documentation for the Poalim Designer
+  url: https://github.com/YossiF93/coupon-system-v2/blob/main/README.md
+servers:
+  - url: /v1
+tags:
+  - name: Login API
+    description: APIs realted to the Login system of the Coupon system
+  - name: Admin Functionality
+    description: APIs realted to the system admin functionality in the coupon system
+  - name: Companies Functionality
+    description: APIs realted to the functionality of the compaines registered to the coupons system
+  - name: Customers Functionality
+    description: APIs realted to the functionality of the customers that signed in to the coupons system
+paths:
+  /coupons-system/login:
+    post:
+      tags:
+        - Login API
+      summary: Login to the Coupon system
+      operationId: clientLogin
+      requestBody:
+        description: Client Details
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ClientLoginDetails'
+        required: true
+      responses:
+        200:
+          description: Login sucssfuly
+          content:
+            application/json:
+              schema:
+                type: string
+components:
+  schemas:
+    User:
+      type: object
+      description: User details
+      properties:
+        id:
+          type: integer
+          format: int64
+        clientType:
+          $ref: '#/components/schemas/ClientType'
+        name:
+          type: string
+          example: David Boee
+        email:
+          type: string
+          example: DavidBoee@gmail.com
+        password:
+          type: string
+          example: "David123123"
+    ClientLoginDetails:
+      type: object
+      description: Client Login Deatils
+      properties:
+        name:
+          type: string
+          example: David Boee
+        email:
+          type: string
+          example: DavidBoee@gmail.com
+        password:
+          type: string
+          example: "David123123"
+    ClientType:
+      type: string
+      description: The User Type
+      enum:
+        - ADMIN
+        - CUSTOMER
+        - COMPANY
+      default: CUSTOMER
+      example: CUSTOMER
