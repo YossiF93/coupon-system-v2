@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c3f38fe1-fab7-410c-bba5-d2050de907a1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <branch-grouping />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/YossiF93/yf-coupons-system-service.git" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
+  <component name="ProjectId" id="1aP4X5g9Qg8zTYDD01frLECjYC3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql&#10;sqlserver" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\git\coupon-system-v2\src\main\resources\swagger\server" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Swagger Codegen.SwaggerCodegen: coupons-system.yaml">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="coupons-system-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="backend.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwaggerCodegen: coupons-system.yaml" type="SwaggerCodegen">
+      <option name="activeConfigurationType" value="FILE" />
+      <option name="configurationPath" value="" />
+      <option name="customJreEnabled" value="false" />
+      <option name="customJrePath" value="null" />
+      <option name="customTemplatesPath" value="" />
+      <option name="enableDebugLogging" value="false" />
+      <option name="generateToPath" value="C:\git\coupon-system-v2" />
+      <option name="generationParameters">
+        <list />
+      </option>
+      <option name="generatorPath" value="https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.3/swagger-codegen-cli-3.0.3.jar" />
+      <option name="language" value="spring" />
+      <option name="specificationPath" value="C:\git\coupon-system-v2\src\main\resources\swagger\server\coupons-system.yaml" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="SwaggerCodegen">
+      <option name="activeConfigurationType" value="FILE" />
+      <option name="configurationPath" value="" />
+      <option name="customJreEnabled" value="false" />
+      <option name="customJrePath" value="null" />
+      <option name="customTemplatesPath" value="" />
+      <option name="enableDebugLogging" value="false" />
+      <option name="generateToPath" value="C:\git\coupon-system-v2" />
+      <option name="generationParameters">
+        <list />
+      </option>
+      <option name="generatorPath" value="https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.3/swagger-codegen-cli-3.0.3.jar" />
+      <option name="language" value="spring" />
+      <option name="specificationPath" value="C:\git\coupon-system-v2\src\main\resources\swagger\server\coupons-system.yaml" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3f38fe1-fab7-410c-bba5-d2050de907a1" name="Default Changelist" comment="" />
+      <created>1586623932067</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586623932067</updated>
+      <workItem from="1586623941976" duration="1063000" />
+      <workItem from="1586626527865" duration="2954000" />
+      <workItem from="1587200334464" duration="40000" />
+      <workItem from="1587200392881" duration="1871000" />
+      <workItem from="1588336079850" duration="1859000" />
+      <workItem from="1588338910446" duration="5000" />
+      <workItem from="1588338937727" duration="1072000" />
+      <workItem from="1588350824446" duration="771000" />
+      <workItem from="1588351614973" duration="3068000" />
+      <workItem from="1601803608198" duration="216000" />
+      <workItem from="1601803846484" duration="502000" />
+      <workItem from="1601804394743" duration="124000" />
+      <workItem from="1601804728378" duration="11000" />
+      <workItem from="1601804770816" duration="6040000" />
+      <workItem from="1601891336002" duration="88000" />
+      <workItem from="1601891444526" duration="6842000" />
+      <workItem from="1601932317617" duration="24586000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="513" y="76" key="#SwaggerCodegen:_coupons-system.yaml" timestamp="1602064128290">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="513" y="76" key="#SwaggerCodegen:_coupons-system.yaml/0.0.1600.860@0.0.1600.860" timestamp="1602064128290" />
+    <state x="424" y="232" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602061250732">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="424" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1602061250732" />
+    <state x="520" y="143" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601804836594">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="520" y="143" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1601804836594" />
+    <state width="415" height="442" key="Diff.GoToChangePopup" timestamp="1601931089472">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="415" height="442" key="Diff.GoToChangePopup/0.0.1600.860@0.0.1600.860" timestamp="1601931089472" />
+    <state x="92" y="92" width="1416" height="676" key="DiffContextDialog" timestamp="1602064128748">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="92" y="92" width="1416" height="676" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1602064128748" />
+    <state x="664" y="182" key="EnvironmentVariablesDialog" timestamp="1601804002010">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="664" y="182" key="EnvironmentVariablesDialog/0.0.1600.860@0.0.1600.860" timestamp="1601804002010" />
+    <state x="583" y="368" key="FileChooserDialogImpl" timestamp="1602060720581">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="583" y="368" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1602060720581" />
+    <state width="1558" height="248" key="GridCell.Tab.0.bottom" timestamp="1602064128322">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1558" height="248" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602064128322" />
+    <state width="1558" height="248" key="GridCell.Tab.0.center" timestamp="1602064128321">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1558" height="248" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602064128321" />
+    <state width="1558" height="248" key="GridCell.Tab.0.left" timestamp="1602064128321">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1558" height="248" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602064128321" />
+    <state width="1558" height="248" key="GridCell.Tab.0.right" timestamp="1602064128322">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1558" height="248" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602064128322" />
+    <state width="1042" height="58" key="GridCell.Tab.1.bottom" timestamp="1601930947791">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1042" height="58" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1601930947791" />
+    <state width="1042" height="58" key="GridCell.Tab.1.center" timestamp="1601930947791">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1042" height="58" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1601930947791" />
+    <state width="1042" height="58" key="GridCell.Tab.1.left" timestamp="1601930947790">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1042" height="58" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1601930947790" />
+    <state width="1042" height="58" key="GridCell.Tab.1.right" timestamp="1601930947791">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1042" height="58" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1601930947791" />
+    <state width="1070" height="40" key="GridCell.Tab.2.bottom" timestamp="1601896279146">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1070" height="40" key="GridCell.Tab.2.bottom/0.0.1600.860@0.0.1600.860" timestamp="1601896279146" />
+    <state width="1070" height="40" key="GridCell.Tab.2.center" timestamp="1601896279145">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1070" height="40" key="GridCell.Tab.2.center/0.0.1600.860@0.0.1600.860" timestamp="1601896279145" />
+    <state width="1070" height="40" key="GridCell.Tab.2.left" timestamp="1601896279145">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1070" height="40" key="GridCell.Tab.2.left/0.0.1600.860@0.0.1600.860" timestamp="1601896279145" />
+    <state width="1070" height="40" key="GridCell.Tab.2.right" timestamp="1601896279146">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1070" height="40" key="GridCell.Tab.2.right/0.0.1600.860@0.0.1600.860" timestamp="1601896279146" />
+    <state x="308" y="61" key="SettingsEditor" timestamp="1601979677691">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="308" y="61" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1601979677691" />
+    <state x="431" y="0" width="578" height="860" key="find.popup" timestamp="1601992002350">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="431" y="0" width="578" height="860" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1601992002350" />
+    <state x="225" y="50" key="new project wizard" timestamp="1601814910197">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="225" y="50" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1601814910197" />
+    <state x="456" y="190" width="672" height="677" key="run.anything.popup" timestamp="1601930605273">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="190" width="672" height="677" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1601930605273" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1601979674148">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1601979674148" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CoupoSystem_FinalProject$CoupoSystemFinalProjectApplication.ic" NAME="CoupoSystemFinalProjectApplication Coverage Results" MODIFIED="1588415717289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
