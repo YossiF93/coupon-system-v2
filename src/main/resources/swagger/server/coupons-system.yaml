@@ -13,8 +13,14 @@ tags:
     description: APIs realted to the Login system of the Coupon system
   - name: Signing API
     description: APIs realted to the Signing process of  the Coupon system
-  - name: Admin Functionality
+  - name: Admin Functionality - General
     description: APIs realted to the system admin functionality in the coupon system
+  - name: Admin Functionality - Companies
+    description: APIs realted to the system admin functionality realted to the companies in the coupon system
+  - name: Admin Functionality - Customers
+    description: APIs realted to the system admin functionality realted to the customers in the coupon system
+  - name: Admin Functionality - Coupons
+    description: APIs realted to the system admin functionality realted to the coupons in the coupon system
   - name: Company Functionality
     description: APIs realted to the functionality of the compaines registered to the coupons system
   - name: Customer Functionality
@@ -102,7 +108,7 @@ paths:
   /coupons-system/admin/createCompany:
     post:
       tags:
-        - Admin Functionality
+        - Admin Functionality - Companies
       summary: Create a new company in the coupon system
       operationId: adminCreateCompany
       requestBody:
@@ -122,7 +128,7 @@ paths:
   /coupons-system/admin/removeCompany:
     post:
       tags:
-        - Admin Functionality
+        - Admin Functionality - Companies
       summary: Remove exsiting company from the coupon system
       operationId: removeComapny
       parameters:
@@ -142,7 +148,7 @@ paths:
   /coupons-system/admin/updateCompany:
     post:
       tags:
-        - Admin Functionality
+        - Admin Functionality - Companies
       summary: Update exsiting company details
       operationId: updateComapny
       requestBody:
@@ -165,10 +171,43 @@ paths:
             application/json:
               schema:
                 type: string
+  /coupons-system/admin/getCompanyDetails:
+    parameters:
+      - name: couponId
+        in: query
+        description: Id of the coupon
+        required: true
+        schema:
+          type: integer
+    get:
+      tags:
+        - Admin Functionality - Companies
+      summary: get company details from the coupon system.
+      operationId: getCompanyAsAdmin
+      responses:
+        200:
+          description: The Company was successfully retrieved from the server
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CompanyDetails'
+  /coupons-system/admin/getCompaniesDetails:
+    get:
+      tags:
+        - Admin Functionality - Companies
+      summary: get the details of all the companies registered in the coupon system.
+      operationId: getAllCompanies
+      responses:
+        200:
+          description: The Companies has been successfully retrieved from the server
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CompaniesList'
   /coupons-system/admin/createCustomer:
     post:
       tags:
-        - Admin Functionality
+        - Admin Functionality - Customers
       summary: Create a new customer in the coupon system
       operationId: adminCreateCustomer
       requestBody:
@@ -187,7 +226,7 @@ paths:
   /coupons-system/admin/removeCustomer:
     post:
       tags:
-        - Admin Functionality
+        - Admin Functionality - Customers
       summary: Remove exsiting customer from the coupon system
       operationId: removeCustomer
       parameters:
@@ -207,7 +246,7 @@ paths:
   /coupons-system/admin/updateCustomer:
     post:
       tags:
-        - Admin Functionality
+        - Admin Functionality - Customers
       summary: Update exsiting cutomer details
       operationId: updateCustomer
       requestBody:
@@ -230,10 +269,43 @@ paths:
             application/json:
               schema:
                 type: string
+  /coupons-system/admin/getCustomer:
+    parameters:
+      - name: customerId
+        in: query
+        description: Id of the coupon
+        required: true
+        schema:
+          type: integer
+    get:
+      tags:
+        - Admin Functionality - Customers
+      summary: get a Customer details from the coupon system.
+      operationId: getCustomerAsAdmin
+      responses:
+        200:
+          description: The Customer was successfully retrieved from the server
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CustomerDetails'
+  /coupons-system/admin/getAllCustomers:
+    get:
+      tags:
+        - Admin Functionality - Customers
+      summary: get all the Customers registered in the coupon system.
+      operationId: getAllCustomers
+      responses:
+        200:
+          description: The Customer has been successfully retrieved from the server
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CustomersList'
   /coupons-system/admin/createCoupon:
     post:
       tags:
-        - Admin Functionality
+        - Admin Functionality - Coupons
       summary: Create a new Coupon in the coupon system
       operationId: createCoupon
       requestBody:
@@ -252,7 +324,7 @@ paths:
   /coupons-system/admin/removeCoupon:
     post:
       tags:
-        - Admin Functionality
+        - Admin Functionality - Coupons
       summary: Remove exsiting Coupon from the coupon system
       operationId: removeCoupon
       parameters:
@@ -272,9 +344,9 @@ paths:
   /coupons-system/admin/updateCoupon:
     post:
       tags:
-        - Admin Functionality
+        - Admin Functionality - Coupons
       summary: Update exsiting Coupon details
-      operationId: updateCoupon
+      operationId: updateCouponAsAdmin
       requestBody:
         description: couponDetails
         content:
@@ -295,7 +367,7 @@ paths:
             application/json:
               schema:
                 type: string
-  /coupons-system/admin/getCompany:
+  /coupons-system/admin/getCouponDetails:
     parameters:
       - name: couponId
         in: query
@@ -305,9 +377,9 @@ paths:
           type: integer
     get:
       tags:
-        - Admin Functionality
-      summary: get company deatils from the coupon system.
-      operationId: getCompanyAsAdmin
+        - Admin Functionality - Coupons
+      summary: get a Coupon details from the coupon system.
+      operationId: getCouponDetailsAsAdmin
       responses:
         200:
           description: The Coupon was successfully retrieved from the server
@@ -315,6 +387,196 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CouponDetails'
+  /coupons-system/admin/getCouponsDetails:
+    parameters:
+      - name: companyId
+        in: query
+        description: Id of the company
+        required: false
+        schema:
+          type: integer
+    get:
+      tags:
+        - Admin Functionality - Coupons
+      summary: get the Coupons registered in the coupon system by companyId.
+      operationId: getAllCoupons
+      responses:
+        200:
+          description: The Coupons has been successfully retrieved from the server
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CouponsList'
+  /coupons-system/company/createCoupon:
+    post:
+      tags:
+        - Company Functionality
+      summary: Create a new company coupon in the coupon system
+      operationId: createCompanyCoupon
+      requestBody:
+        description: CouponDetails
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CouponDetails'
+      responses:
+        200:
+          description: Coupon created successfully
+          content:
+            application/json:
+              schema:
+                type: string
+  /coupons-system/company/removeCoupon:
+   post:
+     tags:
+       - Company Functionality
+     summary: Remove exsiting company coupon from the coupon system
+     operationId: removeCompanyCoupon
+     parameters:
+       - name: couponId
+         in: query
+         description: Id of the coupon
+         required: true
+         schema:
+           type: integer
+     responses:
+       200:
+         description: Coupon removed successfully
+         content:
+           application/json:
+             schema:
+               type: string
+  /coupons-system/company/updateCoupon:
+   post:
+     tags:
+       - Company Functionality
+     summary: Update exsiting Coupon details
+     operationId: updateCoupon
+     requestBody:
+       description: couponDetails
+       content:
+         application/json:
+           schema:
+             $ref: '#/components/schemas/CouponDetails'
+     parameters:
+       - name: couponId
+         in: query
+         description: Id of the coupon
+         required: true
+         schema:
+           type: integer
+     responses:
+       200:
+         description: Coupon details Updated successfully
+         content:
+           application/json:
+             schema:
+               type: string
+  /coupons-system/company/getCouponDetails:
+   parameters:
+     - name: couponId
+       in: query
+       description: Id of the coupon
+       required: true
+       schema:
+         type: integer
+   get:
+     tags:
+       - Company Functionality
+     summary: get a Coupon details from the coupon system.
+     operationId: getCompanyCoupon
+     responses:
+       200:
+         description: The Coupon was successfully retrieved from the server
+         content:
+           application/json:
+             schema:
+               $ref: '#/components/schemas/CouponDetails'
+  /coupons-system/company/getCouponsDetails:
+   get:
+     tags:
+       - Company Functionality
+     summary: get the company coupons.
+     operationId: getCompanyCoupons
+     responses:
+       200:
+         description: The Coupons has been successfully retrieved from the server
+         content:
+           application/json:
+             schema:
+               $ref: '#/components/schemas/CouponsList'
+  /coupons-system/customer/getCustomer:
+    parameters:
+      - name: customerId
+        in: query
+        description: Id of the coupon
+        required: true
+        schema:
+          type: integer
+    get:
+      tags:
+        - Customer Functionality
+      summary: get a Customer details from the coupon system.
+      operationId: getCustomerDetails
+      responses:
+        200:
+          description: The Customer was successfully retrieved from the server
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CustomerDetails'
+  /coupons-system/admin/getCustomerCoupons:
+    parameters:
+      - name: customerId
+        in: query
+        description: Id of the customer
+        required: false
+        schema:
+          type: integer
+    get:
+      tags:
+        - Customer Functionality
+      summary: get the Coupons registered in the coupon system by customerId.
+      operationId: getCustomerCoupons
+      responses:
+        200:
+          description: The Coupons has been successfully retrieved from the server
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CouponsList'
+  /coupons-system/customer/getAvailableCoupons:
+    parameters:
+      - name: customerId
+        in: query
+        description: Id of the customer
+        required: true
+        schema:
+          type: integer
+      - name: couponType
+        in: query
+        description: The Coupon type
+        required: false
+        schema:
+          $ref: '#/components/schemas/CouponsList'
+      - name: price
+        in: query
+        description: price of the coupon
+        required: false
+        schema:
+          type: integer
+    get:
+      tags:
+        - Customer Functionality
+      summary: get the available coupons for the client in the coupon system.
+      operationId: getAvailableCoupons
+      responses:
+        200:
+          description: The Coupons has been successfully retrieved from the server
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CouponType'
 components:
   schemas:
     ClientSigningDetails:
@@ -355,7 +617,7 @@ components:
       example: CUSTOMER
     CompanyDetails:
       type: object
-      description: User signing details
+      description: Company signing details
       properties:
         name:
           type: string
@@ -410,3 +672,28 @@ components:
         image:
           type: string
           example: "www.image.com"
+    CustomerDetails:
+      type: object
+      description: Customer details
+      properties:
+        name:
+          type: string
+          example: David Boee
+        email:
+          type: string
+          example: DavidBoee@gmail.com
+        password:
+          type: string
+          example: "David123123"
+    CompaniesList:
+      type: array
+      items:
+        $ref: '#/components/schemas/CompanyDetails'
+    CouponsList:
+      type: array
+      items:
+        $ref: '#/components/schemas/CouponDetails'
+    CustomersList:
+      type: array
+      items:
+        $ref: '#/components/schemas/CustomerDetails'
